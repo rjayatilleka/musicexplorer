@@ -5,4 +5,4 @@ Build dependencies:
 * `npm install watchify`
 * `npm install coffeeify`
 
-To build: `watchify -t coffeeify index.coffee -o main.js`
+To build: `watchify -t coffeeify scripts/index.coffee -o build/main.js`
