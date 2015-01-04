@@ -1,0 +1,148 @@
+body {
+  background-color: #101010;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+#mainTable {
+  width: 100%;
+}
+
+#mainTable td {
+  width: 25%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 4px;
+  vertical-align: top;
+  opacity: .75;
+}
+
+.songName {
+  text-align: center;
+  padding-top: 10px;
+  height: 60px;
+}
+
+.stars {
+  overflow: hidden;
+}
+
+.iconLine {
+  height: 50px;
+  overflow: hidden;
+}
+
+.danceIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.speaker {
+  width: 50px;
+  height: 50px;
+}
+
+.key {
+  float: right;
+}
+
+.acousticLine {
+  height: 50px;
+  overflow: hidden;
+}
+
+.piano {
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.headphones {
+  float: right;
+  width: 45px;
+  height: 45px;
+}
+
+.greyBar {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  height: 10px;
+  background-color: grey;
+}
+
+.colorBarHolder {
+  height: 10px;
+  width: 50%;
+  float: left;
+}
+
+.leftBar {
+  background-color: black;
+  height: 10px;
+}
+
+.rightBar {
+  background-color: black;
+  height: 10px;
+}
+
+#top {
+  height: 80px;
+  overflow: hidden;
+}
+
+#top img {
+  height: 80px;
+  weight: 80px;
+}
+
+#playButton {
+  display: none;
+}
+
+#currentSong {
+  color: white;
+  height: 100%;
+  vertical-align: center;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+
+#review {
+  display: none;
+  color: white;
+}
+
+svg {
+  fill: white;
+  stroke: white;
+  height: 250px;
+}
+
+svg .plotPoint {
+  /*fill: white;*/
+}
+
+#review div {
+  width: 100%;
+  /*height: 250px;*/
+}
+
+#review h2 {
+  margin-left:10px;
+}
+
+.axis text {
+  font-family: sans-serif;
+  font-size: 11px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  shape-rendering: crispEdges;
+}
