@@ -7,4 +7,7 @@ components = Player: require('./index/player.coffee').Player
 $ = document.querySelector.bind document
 playerMount = $ '#player'
 
-player = React.render React.createElement(components.Player), playerMount
+player = React.render(
+  React.createElement components.Player, api_key: key
+  playerMount
+)

@@ -1,1 +1,1 @@
-exports.key = 'CQ5PFMSHLXPQNBETM'
+module.exports = 'CQ5PFMSHLXPQNBETM'
