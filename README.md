@@ -8,4 +8,4 @@ Build tools:
 Build dependencies:
 * `npm install rx`
 
-To build: `watchify -t coffeeify scripts/index.coffee -o build/main.js`
+To build: `watchify -t coffeeify src/index.coffee -o build/main.js`
