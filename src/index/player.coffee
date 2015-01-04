@@ -1,10 +1,6 @@
-React = require('./lib/react-0.12.2.min.js')
+React = require('../lib/react-0.12.2.min.js')
 
 {p, div, img, h1, span} = React.DOM
-
-Bar = React.createClass
-  render: ->
-
 
 Player = React.createClass
   getInitialState: ->
@@ -33,6 +29,6 @@ Player = React.createClass
       bar: bar
       choices: (panel for i in [0..3])
     }
-  render: -> (p {}, "Player")
+  render: -> (h1 {}, "Player")
 
 exports.Player = Player
