@@ -1,5 +1,12 @@
-$ = document.querySelector.bind(document);
-$$ = document.querySelectorAll.bind(document);
+Rx = require('./rx.lite.min.js'); window.Rx = Rx
 
-body = $('body');
-body.innerHTML += '<p>From CoffeeScript, with Watchify</p>';
+$ = document.querySelector.bind(document);
+
+count = $('#count')
+
+sub = Rx.Observable
+  .fromEvent($('h1'), 'click')
+  .map((e, i) -> i + 1)
+  .merge(Rx.Observable.of(0))
+  .doOnNext((i) -> console.log i)
+  .forEach((i) -> count.innerText = i)
