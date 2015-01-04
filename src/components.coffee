@@ -2,10 +2,6 @@ React = require('./lib/react-0.12.2.min.js')
 
 {p} = React.DOM
 
-Clicks = React.createClass
-  getInitialState: -> clicks: 0
-  render: -> (p {}, "#{@state.clicks} clicks")
-
 Player = React.createClass
   getInitialState: ->
     bar =
@@ -36,4 +32,4 @@ Player = React.createClass
   render: -> (p {}, "Player")
 
 
-exports.Clicks = Clicks
+exports.Player = Player
